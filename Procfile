@@ -1,1 +1,1 @@
-worker: python geniebot.py
+worker: python zetatest.py
