@@ -26,8 +26,10 @@ async def on_message(message):
     if ('!update') in message.content:
        await client.delete_message(message)
     if message.content == "!official":
-       await client.send_message(message.author, "Official ZetaRO Facebook Page and Group \n https://www.facebook.com/groups/315935882497689/ \n https://www.facebook.com/groups/315935882497689/")
-
+       await client.send_message(message.author, "Get The latest update from our Official ZetaRO Facebook Page and Group \n https://www.facebook.com/groups/315935882497689/ \n https://www.facebook.com/groups/315935882497689/")
+    if ('!official') in message.content:
+       await client.delete_message(message)  
+    
     if message.content.startswith('!br'):
         output = message.content.replace('!br ', '')
         await client.send_message(message.channel, 'Hello Zeta Players we have a new update! \n ' + output)
